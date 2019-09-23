@@ -1,8 +1,7 @@
- <?php while (have_posts()) : the_post(); ?>
- <?php if ( $post->post_type == 'post' ) { ?>
+ <?php if ( $post->post_type == 'post' ) : ?>
           **Display Regular Posts**
- <?php } elseif ( $post->post_type == 'movies'  { ?>
+ <?php elseif ( $post->post_type == 'Movies' ) : ?>
           **Display Movie Posts**
- <?php } else  { ?>
+ <?php else :  ?>
           **Display Other Posts**
- <?php else : endif; ?>
+ <?php endif; ?>
